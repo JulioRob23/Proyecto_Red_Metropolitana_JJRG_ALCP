@@ -53,3 +53,13 @@ Los abordajes de Aerómetro se ingresarán mediante streaming con Kafka.
 La fecha y hora se conservarán en UTC dentro de Bronze, tal como vienen en el archivo original.
 
 **Justificación:** Bronze debe mantener el dato recibido sin aplicar transformaciones de negocio. La conversión de UTC a hora local de Guatemala se realizará posteriormente en la capa Silver.
+
+---
+
+## D07 - Conservación del CDC crudo en Bronze
+
+El archivo cdc_padron_usuarios.csv se ingiere a la capa Bronze conservando todas las operaciones y campos tal como fueron recibidos.
+
+En esta etapa no se aplican las operaciones INSERT, UPDATE ni DELETE.
+
+**Justificación:** Bronze conserva el log original del CDC para mantener trazabilidad y permitir reconstruir posteriormente el estado del padrón. La aplicación ordenada de las operaciones se realizará en Staging durante la Fase 1.2.
