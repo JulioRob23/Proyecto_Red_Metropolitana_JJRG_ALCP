@@ -43,3 +43,13 @@ Los viajes de MetroRiel se procesarán mediante una carga Batch.
 **Justificación:** cada registro del archivo representa un viaje completo que ya finalizó, por lo que no es necesario tratar cada dato como un evento individual de streaming.
 
 El archivo original utiliza formato JSON Lines y contiene información anidada. En Bronze se conservará cada línea JSON sin aplanarla. La interpretación y transformación de su estructura se realizará posteriormente en Silver.
+
+---
+
+## D06 - Aerómetro conserva UTC en Bronze
+
+Los abordajes de Aerómetro se ingresarán mediante streaming con Kafka.
+
+La fecha y hora se conservarán en UTC dentro de Bronze, tal como vienen en el archivo original.
+
+**Justificación:** Bronze debe mantener el dato recibido sin aplicar transformaciones de negocio. La conversión de UTC a hora local de Guatemala se realizará posteriormente en la capa Silver.
