@@ -75,3 +75,19 @@ Las llaves numéricas, las llaves MR y el valor SIN-TARJETA se conservarán en S
 **Justificación:** el enunciado define este proceso como el padrón de Transmetro. Incorporar llaves de otros formatos como si fueran tarjetas de Transmetro implicaría asumir una identidad que los datos no demuestran. La ambigüedad se retomará en la estrategia de identidad de la capa Silver.
 
 Para los DELETE, la tarjeta no se eliminará físicamente. Se conservará y se marcará como inactiva. Si un DELETE aparece sin atributos previos conocidos, se conservará la llave como inactiva sin inventar perfil ni zona.
+
+---
+
+## D09 - Catálogos mínimos para operadores sin padrón
+
+Transurbano, MetroRiel y Aerómetro no proporcionan un padrón de usuarios.
+
+Para cada operador se construirá un catálogo mínimo utilizando únicamente las llaves distintas observadas en sus archivos de operación:
+
+- Transurbano: num_tarjeta
+- MetroRiel: card
+- Aerómetro: user_hash
+
+No se agregarán nombres, perfiles, fechas de alta ni otros atributos.
+
+**Justificación:** estos operadores no entregaron información adicional sobre sus usuarios. Agregar atributos implicaría inventar datos que no existen en las fuentes originales.

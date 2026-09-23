@@ -1,0 +1,7 @@
+# Catálogos mínimos de usuarios - Fase 1.2
+
+| operador    | campo_llave   |   usuarios_unicos |
+|:------------|:--------------|------------------:|
+| Transurbano | num_tarjeta   |             36567 |
+| MetroRiel   | card          |             22885 |
+| Aerómetro   | user_hash     |             14496 |
