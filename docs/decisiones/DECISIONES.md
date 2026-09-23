@@ -63,3 +63,15 @@ El archivo cdc_padron_usuarios.csv se ingiere a la capa Bronze conservando todas
 En esta etapa no se aplican las operaciones INSERT, UPDATE ni DELETE.
 
 **Justificación:** Bronze conserva el log original del CDC para mantener trazabilidad y permitir reconstruir posteriormente el estado del padrón. La aplicación ordenada de las operaciones se realizará en Staging durante la Fase 1.2.
+
+---
+
+## D08 - Interpretación del padrón CDC de Transmetro
+
+Aunque el archivo CDC contiene diferentes formatos de llave de usuario, para construir el padrón vigente de Transmetro se utilizarán únicamente las llaves con formato TC-########.
+
+Las llaves numéricas, las llaves MR y el valor SIN-TARJETA se conservarán en Staging y serán contabilizadas, pero no se incorporarán al padrón de Transmetro.
+
+**Justificación:** el enunciado define este proceso como el padrón de Transmetro. Incorporar llaves de otros formatos como si fueran tarjetas de Transmetro implicaría asumir una identidad que los datos no demuestran. La ambigüedad se retomará en la estrategia de identidad de la capa Silver.
+
+Para los DELETE, la tarjeta no se eliminará físicamente. Se conservará y se marcará como inactiva. Si un DELETE aparece sin atributos previos conocidos, se conservará la llave como inactiva sin inventar perfil ni zona.
