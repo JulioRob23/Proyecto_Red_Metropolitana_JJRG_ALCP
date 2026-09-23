@@ -1,0 +1,31 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Variables de entorno
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# VS Code
+.vscode/
+
+# Archivos temporales
+*.log
+.DS_Store
+Thumbs.db
+
+# Datos generados por el pipeline
+lake/
+staging/
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+
+# Prefect
+.prefect/
