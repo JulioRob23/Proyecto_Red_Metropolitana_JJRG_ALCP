@@ -1,0 +1,111 @@
+version: 2
+
+models:
+
+  - name: dim_zona_conformada
+
+    columns:
+
+      - name: zona_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: zona_nombre
+        data_tests:
+          - not_null
+          - unique
+
+
+  - name: bridge_identidad_usuarios
+
+    columns:
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+
+      - name: sistema
+        data_tests:
+          - not_null
+
+      - name: clave_fuente
+        data_tests:
+          - not_null
+
+
+  - name: silver_transmetro_validaciones
+
+    columns:
+
+      - name: validacion_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+
+
+  - name: silver_transurbano_transacciones
+
+    columns:
+
+      - name: transaccion_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+
+
+  - name: silver_metroriel_viajes
+
+    columns:
+
+      - name: trip_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+
+
+  - name: silver_aerometro_boardings
+
+    columns:
+
+      - name: boarding_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+
+
+  - name: scd2_padron_transmetro
+
+    columns:
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+
+      - name: tarjeta
+        data_tests:
+          - not_null
+
+      - name: version_seq
+        data_tests:
+          - not_null
+
+      - name: valid_from
+        data_tests:
+          - not_null

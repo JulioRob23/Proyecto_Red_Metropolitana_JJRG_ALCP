@@ -91,3 +91,74 @@ Para cada operador se construirá un catálogo mínimo utilizando únicamente la
 No se agregarán nombres, perfiles, fechas de alta ni otros atributos.
 
 **Justificación:** estos operadores no entregaron información adicional sobre sus usuarios. Agregar atributos implicaría inventar datos que no existen en las fuentes originales.
+
+---
+
+## D10 - Reglas iniciales de calidad para Silver
+
+Antes de construir Silver se definen las siguientes reglas de calidad:
+
+### QC01 - Duplicados de Transmetro
+Una validación repetida con el mismo identificador de evento se considera duplicada. Se conservará una ocurrencia válida y las repeticiones adicionales se enviarán a cuarentena.
+
+### QC02 - Parada nula de Transurbano
+Una transacción con cod_parada vacío o nulo se considera inválida para análisis espacial y se enviará a cuarentena.
+
+### QC03 - Fecha futura de Transurbano
+Una transacción cuya fecha se encuentre después de la fecha de corte definida para el procesamiento se considera inválida y se enviará a cuarentena.
+
+### QC04 - Viaje sin salida de MetroRiel
+Un viaje cuyo objeto o estación de salida no exista se considera incompleto y se enviará a cuarentena.
+
+Los registros rechazados no se eliminarán. Se almacenarán junto con la fuente y el motivo de rechazo.
+
+---
+
+## D11 - Fecha de corte para validación temporal
+
+Para las reglas de calidad de la Fase 1.3 se utilizará como fecha de corte el 15 de julio de 2026.
+
+**Justificación:** el generador entregado simula 45 días de operación iniciando el 1 de junio de 2026. Por lo tanto, los registros posteriores al 15 de julio de 2026 se consideran fechas futuras o inconsistentes para este conjunto de datos.
+
+---
+
+## D12 - Estrategia de identidad entre operadores
+
+No existe una tabla oficial que relacione las llaves de usuario de los cuatro sistemas.
+
+Para Transmetro, Transurbano y MetroRiel se utilizará como aproximación el núcleo numérico de sus identificadores:
+
+- TC-00013132 → 00013132
+- 0000013132 → 00013132
+- MR0013132 → 00013132
+
+Cuando el núcleo numérico coincide se asumirá que las llaves corresponden al mismo usuario.
+
+Esta relación es una heurística y no una equivalencia demostrada por una tabla maestra, por lo que debe interpretarse como una aproximación.
+
+Aerómetro utiliza un hash que no puede relacionarse de manera confiable con las demás llaves. Sus usuarios permanecerán como identidades independientes.
+
+Como consecuencia, los análisis multimodales podrán identificar relaciones entre Transmetro, Transurbano y MetroRiel, pero podrían subestimar los transbordos que involucren Aerómetro.
+
+El identificador conformado será seudonimizado mediante SHA-256 antes de llegar a Gold.
+
+---
+
+## D13 - Historización del padrón mediante SCD Tipo 2
+
+El historial del padrón de Transmetro se modelará mediante SCD Tipo 2.
+
+Cada INSERT, UPDATE o DELETE genera una versión temporal del estado de la tarjeta.
+
+Cada versión contiene:
+
+- fecha de inicio de vigencia;
+- fecha de fin de vigencia;
+- indicador de versión actual;
+- perfil;
+- zona de residencia;
+- estado activo o inactivo.
+
+Los DELETE generan una nueva versión inactiva y conservan los últimos atributos conocidos de la tarjeta.
+
+De esta forma es posible consultar cómo se encontraba una tarjeta en una fecha histórica sin perder los cambios posteriores.

@@ -1,0 +1,20 @@
+﻿categoria,metrica,valor,porcentaje
+Silver,Filas válidas Transmetro,362106,
+Silver,Filas válidas Transurbano,827788,
+Silver,Filas válidas MetroRiel,295511,
+Silver,Filas válidas Aerometro,203554,
+Silver,Total filas válidas Silver,1688959,
+Calidad,QC01_TM_DUPLICADO,1115,0.307
+Calidad,QC02_TU_PARADA_NULA,4189,0.503
+Calidad,QC03_TU_FECHA_FUTURA,817,0.0981
+Calidad,QC04_MR_SIN_SALIDA,3589,1.1999
+Calidad,Incumplimientos totales,9710,0.5716
+Calidad,Registros únicos en cuarentena,9707,0.5714
+Identidad,Llaves fuente,117205,
+Identidad,Usuarios conformados,70380,
+Identidad,Usuarios multimodales aproximados,36829,
+SCD2,Versiones históricas,22326,
+SCD2,Tarjetas historizadas,17432,
+SCD2,Tarjetas activas actuales,15096,
+SCD2,Tarjetas inactivas actuales,2336,
+Integración,Zonas conformadas,16,
