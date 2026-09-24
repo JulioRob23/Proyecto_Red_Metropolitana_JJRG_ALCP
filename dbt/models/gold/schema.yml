@@ -1,0 +1,184 @@
+version: 2
+
+models:
+
+  - name: dim_modo
+
+    columns:
+
+      - name: modo_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: modo_codigo
+        data_tests:
+          - not_null
+          - unique
+
+
+  - name: dim_zona
+
+    columns:
+
+      - name: zona_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: zona_nombre
+        data_tests:
+          - not_null
+          - unique
+
+
+  - name: dim_usuario
+
+    columns:
+
+      - name: usuario_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_id
+        data_tests:
+          - not_null
+          - unique
+
+
+  - name: dim_tiempo
+
+    columns:
+
+      - name: tiempo_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: minuto_inicio
+        data_tests:
+          - not_null
+          - unique
+
+
+  - name: dim_punto_servicio
+
+    columns:
+
+      - name: punto_servicio_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: modo_key
+        data_tests:
+          - not_null
+
+      - name: codigo_fuente
+        data_tests:
+          - not_null
+
+      - name: zona_key
+        data_tests:
+          - not_null
+          
+  - name: fact_abordajes
+
+    columns:
+
+      - name: abordaje_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_key
+        data_tests:
+          - not_null
+
+      - name: modo_key
+        data_tests:
+          - not_null
+
+      - name: tiempo_key
+        data_tests:
+          - not_null
+
+      - name: zona_key
+        data_tests:
+          - not_null
+
+      - name: punto_servicio_key
+        data_tests:
+          - not_null
+
+      - name: evento_id
+        data_tests:
+          - not_null
+
+      - name: cantidad_abordajes
+        data_tests:
+          - not_null
+
+      - name: monto_gtq
+        data_tests:
+          - not_null
+
+
+  - name: fact_viajes_metroriel
+
+    columns:
+
+      - name: viaje_key
+        data_tests:
+          - not_null
+          - unique
+
+      - name: trip_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: usuario_key
+        data_tests:
+          - not_null
+
+      - name: modo_key
+        data_tests:
+          - not_null
+
+      - name: tiempo_entrada_key
+        data_tests:
+          - not_null
+
+      - name: tiempo_salida_key
+        data_tests:
+          - not_null
+
+      - name: zona_origen_key
+        data_tests:
+          - not_null
+
+      - name: zona_destino_key
+        data_tests:
+          - not_null
+
+      - name: punto_origen_key
+        data_tests:
+          - not_null
+
+      - name: punto_destino_key
+        data_tests:
+          - not_null
+
+      - name: cantidad_viajes
+        data_tests:
+          - not_null
+
+      - name: tarifa_gtq
+        data_tests:
+          - not_null
+
+      - name: duracion_segundos
+        data_tests:
+          - not_null

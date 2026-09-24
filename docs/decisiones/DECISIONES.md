@@ -162,3 +162,26 @@ Cada versión contiene:
 Los DELETE generan una nueva versión inactiva y conservan los últimos atributos conocidos de la tarjeta.
 
 De esta forma es posible consultar cómo se encontraba una tarjeta en una fecha histórica sin perder los cambios posteriores.
+
+---
+
+## D14 - Grano de la capa Gold
+
+La capa Gold utilizará dos procesos principales:
+
+1. Abordajes de la red.
+2. Viajes completos de MetroRiel.
+
+La tabla fact_abordajes tendrá una fila por abordaje válido. Para MetroRiel
+se utilizará únicamente el evento de entrada del viaje como abordaje.
+
+La tabla fact_viajes_metroriel conservará una fila por viaje completo de
+MetroRiel.
+
+**Justificación:** los sistemas de Transmetro, Transurbano y Aerómetro no
+entregan suficiente información para reconstruir de forma confiable un viaje
+completo. Inferir un destino implicaría introducir información que las fuentes
+no proporcionan.
+
+MetroRiel sí entrega origen y destino, por lo que ese detalle se conserva
+en una tabla de hechos independiente.
