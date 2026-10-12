@@ -30,3 +30,6 @@ models:
     gold:
       +schema: gold
       +materialized: table
+
+      tableau:
+       +materialized: view
