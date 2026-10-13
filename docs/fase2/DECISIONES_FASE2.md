@@ -23,3 +23,22 @@ Raw o Bronze.
 
 Los análisis utilizarán los datos ya validados en Silver y Gold, manteniendo
 el linaje y las reglas de calidad definidas durante la Fase 1.
+
+## D2.3 - Criterio de recomendación de movilidad
+
+La recomendación de la Fase 2 no evalúa a MetroRiel de forma aislada.
+
+Se considera al corredor como parte de una red integrada debido a que los
+datos muestran una alta utilización de los modos existentes y evidencia
+de multimodalidad aproximada entre los usuarios.
+
+La recomendación se basa principalmente en:
+
+- concentración de demanda por zona;
+- cobertura territorial;
+- multimodalidad observada;
+- coincidencia entre las zonas de mayor demanda y el corredor MetroRiel;
+- demanda que permanece fuera del corredor.
+
+Por lo tanto, se propone a MetroRiel como corredor estructurante y no como
+sustituto de Transmetro, Transurbano o Aerómetro.
