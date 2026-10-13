@@ -1,0 +1,96 @@
+version: 2
+
+models:
+
+  - name: int_eventos_usuario_features
+    description: >
+      Vista intermedia que unifica los eventos válidos de Transmetro,
+      Transurbano, MetroRiel y Aerómetro provenientes de Silver para
+      construir features por usuario.
+
+    columns:
+
+      - name: usuario_id
+        description: Identificador seudonimizado del usuario.
+        data_tests:
+          - not_null
+
+      - name: modo
+        description: Sistema de transporte donde ocurrió el evento.
+        data_tests:
+          - not_null
+
+      - name: fecha_hora
+        description: Fecha y hora local del evento.
+        data_tests:
+          - not_null
+
+
+  - name: features_usuario
+    description: >
+      Tabla model-ready con una fila por usuario y variables derivadas
+      únicamente de la capa Silver, utilizando como fecha de corte
+      el 15 de julio de 2026 a las 23:59:59.
+
+    columns:
+
+      - name: usuario_id
+        description: Identificador seudonimizado único del usuario.
+        data_tests:
+          - not_null
+          - unique
+
+      - name: fecha_corte
+        description: Fecha máxima utilizada para construir las variables.
+        data_tests:
+          - not_null
+
+      - name: eventos_7d
+        description: Cantidad de eventos observados en los últimos 7 días.
+        data_tests:
+          - not_null
+
+      - name: eventos_30d
+        description: Cantidad de eventos observados en los últimos 30 días.
+        data_tests:
+          - not_null
+
+      - name: eventos_periodo
+        description: Cantidad total de eventos durante el período disponible.
+        data_tests:
+          - not_null
+
+      - name: cantidad_modos
+        description: Cantidad de sistemas diferentes utilizados por el usuario.
+        data_tests:
+          - not_null
+
+      - name: es_multimodal_aprox
+        description: Indica si el usuario fue observado en más de un sistema.
+        data_tests:
+          - not_null
+
+      - name: modo_mas_usado
+        description: Sistema con mayor cantidad de eventos del usuario.
+        data_tests:
+          - not_null
+
+      - name: dias_desde_ultima_actividad
+        description: Días transcurridos entre la última actividad y la fecha de corte.
+        data_tests:
+          - not_null
+
+      - name: proporcion_hora_pico
+        description: Proporción de eventos realizados durante horas pico.
+        data_tests:
+          - not_null
+
+      - name: proporcion_dia_habil
+        description: Proporción de eventos realizados de lunes a viernes.
+        data_tests:
+          - not_null
+
+      - name: gasto_acumulado_gtq
+        description: Suma del monto pagado durante el período observado.
+        data_tests:
+          - not_null

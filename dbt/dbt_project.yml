@@ -33,3 +33,7 @@ models:
 
       tableau:
        +materialized: view
+    
+    features:
+      +schema: features
+      +materialized: table
