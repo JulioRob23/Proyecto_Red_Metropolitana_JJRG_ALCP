@@ -20,7 +20,6 @@ Thumbs.db
 
 # Datos generados por el pipeline
 lake/
-staging/
 
 # dbt
 dbt/target/
