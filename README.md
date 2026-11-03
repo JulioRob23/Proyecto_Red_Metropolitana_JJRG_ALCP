@@ -464,3 +464,14 @@ un transbordo físico.
 
 El período de datos disponible comprende aproximadamente del 1 de junio
 al 15 de julio de 2026.
+
+## Proyecto 2 - Ejecución desde cero
+
+Para el Proyecto 2 se reutilizó y ajustó el pipeline construido en el
+Proyecto 1. Los nuevos archivos se colocan en la carpeta `datos_red/`.
+
+La ejecución completa desde un entorno limpio se realiza con un único
+comando:
+
+```powershell
+python orchestration\flujo_proyecto2.py --desde-cero

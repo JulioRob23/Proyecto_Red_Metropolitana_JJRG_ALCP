@@ -1,0 +1,24 @@
+{
+  "fecha": "2026-11-02T19:05:17.005927-06:00",
+  "conteos": {
+    "silver.silver_transmetro_validaciones": 711684,
+    "silver.silver_transurbano_transacciones": 803925,
+    "silver.silver_metroriel_viajes": 583745,
+    "silver.silver_aerometro_boardings": 387053,
+    "silver.dim_zona_conformada": 16,
+    "silver.bridge_identidad_usuarios": 145561,
+    "silver.scd2_padron_transmetro": 55403,
+    "gold.dim_modo": 4,
+    "gold.dim_zona": 16,
+    "gold.dim_usuario": 93009,
+    "gold.dim_tiempo": 64800,
+    "gold.dim_punto_servicio": 468,
+    "gold.fact_abordajes": 2486407,
+    "gold.fact_viajes_metroriel": 583745,
+    "quarantine.registros_invalidos": 845108
+  },
+  "tiempos_segundos": {
+    "dbt_run": 1562.31,
+    "dbt_test": 307.09
+  }
+}

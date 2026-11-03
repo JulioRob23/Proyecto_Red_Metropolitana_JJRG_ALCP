@@ -28,3 +28,8 @@ dbt/dbt_packages/
 
 # Prefect
 .prefect/
+
+# Datos de entrada Proyecto 2
+datos/raw/
+datos_red/
+*.zip

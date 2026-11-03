@@ -2,6 +2,6 @@
 
 | operador    | campo_llave   |   usuarios_unicos |
 |:------------|:--------------|------------------:|
-| Transurbano | num_tarjeta   |             36567 |
-| MetroRiel   | card          |             22885 |
-| Aerómetro   | user_hash     |             14496 |
+| Transurbano | num_tarjeta   |             45685 |
+| MetroRiel   | card          |             26414 |
+| Aerómetro   | user_hash     |             16930 |

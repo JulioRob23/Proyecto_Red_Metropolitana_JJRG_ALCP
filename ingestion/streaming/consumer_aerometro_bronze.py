@@ -27,7 +27,7 @@ BOOTSTRAP_SERVERS = os.getenv(
     "localhost:9092"
 )
 
-GROUP_ID = "redmetro-bronze-aerometro-v1"
+GROUP_ID = "redmetro-p2-bronze-aerometro-v2"
 
 CHUNK_SIZE = 50000
 

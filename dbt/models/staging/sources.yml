@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+
+  - name: raw
+    database: red_metropolitana
+    schema: staging
+
+    tables:
+
+      - name: tm_estaciones_raw
+      - name: tu_paradas_raw
+      - name: mr_estaciones_raw
+      - name: am_estaciones_raw
+
+      - name: transmetro_validaciones_raw
+      - name: transurbano_transacciones_raw
+      - name: metroriel_viajes_raw
+      - name: aerometro_boardings_raw
+
+      - name: cdc_padron_raw
