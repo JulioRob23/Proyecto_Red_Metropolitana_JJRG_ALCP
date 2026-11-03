@@ -1,0 +1,3 @@
+corte,fecha_corte,poblacion,positivos,tasa_positiva,cuenta_completa
+A,2026-07-01,59999,8310,0.1385,"8310 / 59999 = 0.1385"
+B,2026-07-31,54279,15125,0.2787,"15125 / 54279 = 0.2787"
