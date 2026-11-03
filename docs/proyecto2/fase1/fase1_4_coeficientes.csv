@@ -1,0 +1,35 @@
+feature,coeficiente
+dias_desde_ultimo_viaje,0.732171
+zona_mas_frecuente_Zona 13,0.234181
+zona_mas_frecuente_Zona 10,0.151281
+viajes_14d,0.127328
+viajes_28d,0.101157
+proporcion_transurbano,0.092796
+proporcion_metroriel,0.013488
+gasto_total_28d,-0.018285
+proporcion_hora_pico,-0.040041
+proporcion_dia_habil,-0.052152
+es_multimodal,-0.053509
+proporcion_aerometro,-0.059236
+proporcion_transmetro,-0.0653
+cantidad_modos_28d,-0.066241
+zona_mas_frecuente_Villa Nueva,-0.089665
+zona_mas_frecuente_Zona 11,-0.127363
+zona_mas_frecuente_Zona 8,-0.130183
+zona_mas_frecuente_San Miguel Petapa,-0.135412
+zona_mas_frecuente_Zona 6,-0.156652
+gasto_promedio_28d,-0.158571
+zona_mas_frecuente_Zona 18,-0.1587
+zona_mas_frecuente_Zona 12,-0.161787
+zona_mas_frecuente_Zona 1,-0.166512
+zona_mas_frecuente_Mixco,-0.171765
+zona_mas_frecuente_Zona 7,-0.179679
+zona_mas_frecuente_Zona 9,-0.202237
+zona_mas_frecuente_Zona 4,-0.217492
+zona_mas_frecuente_Zona 17,-0.221522
+modo_mas_usado_AEROMETRO,-0.323765
+modo_mas_usado_METRORIEL,-0.330304
+modo_mas_usado_TRANSMETRO,-0.449431
+viajes_7d,-0.462097
+dias_activos_28d,-0.564001
+modo_mas_usado_TRANSURBANO,-0.630007

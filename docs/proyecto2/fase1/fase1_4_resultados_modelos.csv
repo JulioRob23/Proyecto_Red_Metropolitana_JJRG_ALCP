@@ -1,0 +1,5 @@
+modelo,configuracion,ap_media,ap_std
+Logística L2,lambda=100; C=0.01,0.460007,0.009004
+Logística L1,lambda=10; C=0.1,0.459745,0.009365
+Baseline recencia,dias_desde_ultimo_viaje,0.445212,0.00816
+Baseline prevalencia,p = 8310 / 59999,0.138502,5e-06

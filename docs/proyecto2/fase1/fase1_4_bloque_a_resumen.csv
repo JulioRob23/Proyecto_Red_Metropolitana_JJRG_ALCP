@@ -1,0 +1,8 @@
+metrica,valor
+filas_corte_A,59999.0
+positivos,8310.0
+negativos,51689.0
+tasa_positiva,0.138502
+duplicados,0.0
+n_folds,5.0
+random_state,42.0

@@ -1,0 +1,11 @@
+modelo,fold,average_precision
+Baseline prevalencia,1,0.1385
+Baseline prevalencia,2,0.1385
+Baseline prevalencia,3,0.1385
+Baseline prevalencia,4,0.1385
+Baseline prevalencia,5,0.1385115426285524
+Baseline recencia,1,0.442330611080714
+Baseline recencia,2,0.4451754311875735
+Baseline recencia,3,0.43952208536896914
+Baseline recencia,4,0.4398043702426894
+Baseline recencia,5,0.45922708898466996

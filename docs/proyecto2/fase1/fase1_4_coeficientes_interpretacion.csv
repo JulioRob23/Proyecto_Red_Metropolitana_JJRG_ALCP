@@ -1,0 +1,6 @@
+feature,coeficiente,interpretacion
+dias_desde_ultimo_viaje,0.732171,"Una mayor cantidad de dias desde el ultimo viaje aumenta el puntaje estimado de abandono."
+zona_mas_frecuente_Zona 13,0.234181,"Cuando Zona 13 es la zona mas frecuente el modelo empuja la prediccion hacia abandono; representa una asociacion y no causalidad."
+zona_mas_frecuente_Zona 10,0.151281,"Cuando Zona 10 es la zona mas frecuente el modelo aumenta ligeramente el puntaje hacia abandono; representa una asociacion de los datos."
+viajes_14d,0.127328,"Manteniendo constantes las demas variables, una mayor actividad en 14 dias empuja ligeramente hacia abandono; el signo debe interpretarse junto con las otras variables correlacionadas de actividad."
+viajes_28d,0.101157,"Presenta una contribucion positiva pequena condicionada por las demas variables de frecuencia y recencia; no significa que viajar mas cause abandono."
