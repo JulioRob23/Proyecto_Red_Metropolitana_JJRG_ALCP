@@ -1,0 +1,2 @@
+modelo,ap_train_media,ap_train_std,ap_validacion_media,ap_validacion_std,brecha_media,tiempo_entrenamiento_medio_s
+HistGradientBoosting,0.507178,0.002215,0.478147,0.008159,0.029031,2.3257

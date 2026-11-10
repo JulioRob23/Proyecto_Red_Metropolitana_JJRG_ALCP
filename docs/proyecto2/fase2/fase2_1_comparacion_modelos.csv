@@ -1,0 +1,6 @@
+modelo,ap_train_media,ap_train_std,ap_validacion_media,ap_validacion_std,brecha_media
+HistGradientBoosting,0.507178,0.002215,0.478147,0.008159,0.029031
+Logística L2,0.460862,0.002364,0.460007,0.009004,0.000855
+Logística L1,0.460699,0.00225,0.459745,0.009365,0.000954
+Baseline recencia,0.444777,0.002006,0.445212,0.00816,-0.000435
+Baseline prevalencia,0.138502,1e-06,0.138502,5e-06,-0.0
