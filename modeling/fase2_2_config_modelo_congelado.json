@@ -1,0 +1,67 @@
+{
+  "version": "p2_hgb_v1",
+  "estado": "CONGELADO_ANTES_TEST_B",
+  "modelo": {
+    "clase": "HistGradientBoostingClassifier",
+    "parametros": {
+      "learning_rate": 0.05,
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 42
+    }
+  },
+  "datos_entrenamiento": {
+    "corte": "A",
+    "fecha_corte": "2026-07-01",
+    "filas": 59999,
+    "positivos": 8310,
+    "folds_cv": 5
+  },
+  "metrica_seleccion": {
+    "nombre": "average_precision",
+    "ap_validacion_media": 0.478147,
+    "ap_validacion_std": 0.008159
+  },
+  "umbral": {
+    "metodo": "maxima_ganancia_OOF_corte_A",
+    "valor": 0.3411563283615902,
+    "teorico": 0.3333333333333333,
+    "contactados_oof": 7227,
+    "precision_oof": 0.5008994050089941,
+    "recall_oof": 0.4356197352587244,
+    "ganancia_oof_q": 18165.0
+  },
+  "escenario_economico": {
+    "costo_contacto_q": 5.0,
+    "probabilidad_retencion": 0.25,
+    "valor_usuario_retenido_q": 60.0,
+    "beneficio_esperado_por_churner_contactado_q": 15.0
+  },
+  "features": [
+    "viajes_7d",
+    "viajes_14d",
+    "viajes_28d",
+    "dias_activos_28d",
+    "dias_desde_ultimo_viaje",
+    "cantidad_modos_28d",
+    "proporcion_hora_pico",
+    "proporcion_dia_habil",
+    "gasto_total_28d",
+    "gasto_promedio_28d",
+    "proporcion_transmetro",
+    "proporcion_transurbano",
+    "proporcion_metroriel",
+    "proporcion_aerometro",
+    "es_multimodal",
+    "modo_mas_usado",
+    "zona_mas_frecuente"
+  ],
+  "restricciones": [
+    "La etiqueta del corte B no se utilizó para seleccionar el modelo.",
+    "La etiqueta del corte B no se utilizó para seleccionar el umbral.",
+    "Después de evaluar B no se modificarán modelo, features, hiperparámetros ni umbral."
+  ]
+}
