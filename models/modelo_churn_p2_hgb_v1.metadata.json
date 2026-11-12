@@ -1,0 +1,55 @@
+{
+  "version": "p2_hgb_v1",
+  "archivo_modelo": "modelo_churn_p2_hgb_v1.joblib",
+  "sha256": "08e6f4b8e4c8df5172943d34250049ae211eaeb53cfb9bad0a807675c43b9a9d",
+  "fecha_creacion": "2026-11-11T23:22:00.450190-06:00",
+  "modelo": {
+    "clase": "HistGradientBoostingClassifier",
+    "parametros": {
+      "learning_rate": 0.05,
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "random_state": 42
+    }
+  },
+  "entrenamiento": {
+    "corte": "A",
+    "fecha_corte": "2026-07-01",
+    "filas": 59999,
+    "positivos": 8310,
+    "segundos": 3.972502199999326
+  },
+  "features": [
+    "viajes_7d",
+    "viajes_14d",
+    "viajes_28d",
+    "dias_activos_28d",
+    "dias_desde_ultimo_viaje",
+    "cantidad_modos_28d",
+    "proporcion_hora_pico",
+    "proporcion_dia_habil",
+    "gasto_total_28d",
+    "gasto_promedio_28d",
+    "proporcion_transmetro",
+    "proporcion_transurbano",
+    "proporcion_metroriel",
+    "proporcion_aerometro",
+    "es_multimodal",
+    "modo_mas_usado",
+    "zona_mas_frecuente"
+  ],
+  "umbral": 0.3411563283615902,
+  "metrica_cv_a": {
+    "nombre": "average_precision",
+    "ap_validacion_media": 0.478147,
+    "ap_validacion_std": 0.008159
+  },
+  "test_b": {
+    "ya_evaluado": true,
+    "nota": "El resultado B fue registrado en Fase 2.2 y no se utilizó para reajustar el modelo."
+  },
+  "regla_produccion": "El modelo se carga desde disco y no debe reentrenarse dentro de predecir.py."
+}

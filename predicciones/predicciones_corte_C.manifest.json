@@ -1,0 +1,13 @@
+{
+  "fecha_generacion": "2026-11-12T00:03:23.410032-06:00",
+  "fecha_corte": "2026-08-30",
+  "carpeta_datos": "C:\\Users\\jujar\\OneDrive\\Escritorio\\BackUp\\U Landivar\\Segundo semestre 2026\\Ciencia de datos\\Proyecto_Red_Metropolitana_P2\\datos_red",
+  "modo": "db_existente",
+  "modelo": "modelo_churn_p2_hgb_v1.joblib",
+  "modelo_sha256": "08e6f4b8e4c8df5172943d34250049ae211eaeb53cfb9bad0a807675c43b9a9d",
+  "umbral": 0.3411563283615902,
+  "filas": 40296,
+  "contactados": 5480,
+  "csv": "predicciones\\predicciones_corte_C.csv",
+  "csv_sha256": "e7397c3d8e2a02f7f12640e1e497af3ba28b6f03f0102a1fc5db03d1b801e028"
+}

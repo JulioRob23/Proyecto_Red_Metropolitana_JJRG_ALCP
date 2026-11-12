@@ -1,0 +1,2 @@
+version,modelo,archivo,filas_entrenamiento,positivos_entrenamiento,umbral,ap_cv_a,ap_train_a_sanity,segundos_entrenamiento,tamanio_bytes,sha256,diferencia_pred_recarga
+p2_hgb_v1,HistGradientBoostingClassifier,modelo_churn_p2_hgb_v1.joblib,59999,8310,0.3411563283615902,0.478147,0.5037649294904295,3.972502199999326,112059,08e6f4b8e4c8df5172943d34250049ae211eaeb53cfb9bad0a807675c43b9a9d,0.0
