@@ -1,0 +1,9 @@
+{
+  "estado": "COMPLETADO",
+  "fecha_evaluacion": "2026-11-11T22:45:37.393109-06:00",
+  "pretest_commit": "e8ae9366345c61fccb82e65519533bf00fe450c8",
+  "evaluation_code_commit": "ae48cb2647e8fc06012ee33856b3b5ce6d59a1fe",
+  "ap_b": 0.6519944383089173,
+  "umbral": 0.3411563283615902,
+  "ganancia_b_q": 76970.0
+}
