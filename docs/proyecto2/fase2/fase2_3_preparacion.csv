@@ -1,0 +1,2 @@
+filas,features_originales,features_transformadas,positivos,etiqueta_usada_en_kmeans,random_state,silhouette_sample_size
+59999,17,34,8310,False,42,10000

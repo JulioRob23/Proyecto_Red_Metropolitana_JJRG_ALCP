@@ -1,0 +1,6 @@
+segmento,tamanio,proporcion_poblacion,tasa_abandono,mediana_viajes_7d,mediana_viajes_14d,mediana_viajes_28d,mediana_dias_activos_28d,mediana_dias_desde_ultimo_viaje,mediana_cantidad_modos_28d,mediana_es_multimodal,mediana_gasto_total_28d,mediana_gasto_promedio_28d,mediana_proporcion_hora_pico,mediana_proporcion_dia_habil,modo_mas_usado_moda,zona_mas_frecuente_moda
+1,9968,0.16613610226837114,0.13954654895666133,2.0,4.0,9.0,7.0,2.64845,2.0,1.0,21.0,2.43,0.6667,0.875,METRORIEL,Zona 1
+2,27207,0.4534575576259604,0.1527180505017091,2.0,5.0,10.0,7.0,2.3435,2.0,1.0,11.7,1.3,0.0857,0.8667,TRANSURBANO,Zona 10
+3,4152,0.06920115335255587,0.014932562620423893,17.0,32.0,61.0,22.0,0.42745,2.0,1.0,90.0,1.3,0.28165,0.871,TRANSURBANO,Zona 1
+4,10111,0.16851947532458875,0.14429828899218672,1.0,3.0,6.0,5.0,3.7071,1.0,0.0,21.0,3.5,0.75,0.8889,AEROMETRO,Mixco
+5,8561,0.14268571142852382,0.14519331853755402,2.0,4.0,9.0,7.0,2.3537,1.0,0.0,8.0,1.0,0.75,0.875,TRANSMETRO,Zona 10

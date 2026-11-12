@@ -1,0 +1,6 @@
+segmento,viajes_7d_segmento,viajes_7d_global,viajes_7d_ratio_global,viajes_14d_segmento,viajes_14d_global,viajes_14d_ratio_global,viajes_28d_segmento,viajes_28d_global,viajes_28d_ratio_global,dias_activos_28d_segmento,dias_activos_28d_global,dias_activos_28d_ratio_global,dias_desde_ultimo_viaje_segmento,dias_desde_ultimo_viaje_global,dias_desde_ultimo_viaje_ratio_global,cantidad_modos_28d_segmento,cantidad_modos_28d_global,cantidad_modos_28d_ratio_global,gasto_total_28d_segmento,gasto_total_28d_global,gasto_total_28d_ratio_global,gasto_promedio_28d_segmento,gasto_promedio_28d_global,gasto_promedio_28d_ratio_global
+1,2.0,2.0,1.0,4.0,5.0,0.8,9.0,10.0,0.9,7.0,7.0,1.0,2.64845,2.0174,1.3128036086051353,2.0,1.0,2.0,21.0,15.0,1.4,2.43,1.3,1.8692307692307693
+2,2.0,2.0,1.0,5.0,5.0,1.0,10.0,10.0,1.0,7.0,7.0,1.0,2.3435,2.0174,1.1616436998116388,2.0,1.0,2.0,11.7,15.0,0.7799999999999999,1.3,1.3,1.0
+3,17.0,2.0,8.5,32.0,5.0,6.4,61.0,10.0,6.1,22.0,7.0,3.142857142857143,0.42745,2.0174,0.21188162982056113,2.0,1.0,2.0,90.0,15.0,6.0,1.3,1.3,1.0
+4,1.0,2.0,0.5,3.0,5.0,0.6,6.0,10.0,0.6,5.0,7.0,0.7142857142857143,3.7071,2.0174,1.8375632001586202,1.0,1.0,1.0,21.0,15.0,1.4,3.5,1.3,2.692307692307692
+5,2.0,2.0,1.0,4.0,5.0,0.8,9.0,10.0,0.9,7.0,7.0,1.0,2.3537,2.0174,1.1666997125012393,1.0,1.0,1.0,8.0,15.0,0.5333333333333333,1.0,1.3,0.7692307692307692

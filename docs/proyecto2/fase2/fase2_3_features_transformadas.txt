@@ -1,0 +1,34 @@
+viajes_7d
+viajes_14d
+viajes_28d
+dias_activos_28d
+dias_desde_ultimo_viaje
+cantidad_modos_28d
+proporcion_hora_pico
+proporcion_dia_habil
+gasto_total_28d
+gasto_promedio_28d
+proporcion_transmetro
+proporcion_transurbano
+proporcion_metroriel
+proporcion_aerometro
+es_multimodal
+modo_mas_usado_AEROMETRO
+modo_mas_usado_METRORIEL
+modo_mas_usado_TRANSMETRO
+modo_mas_usado_TRANSURBANO
+zona_mas_frecuente_Mixco
+zona_mas_frecuente_San Miguel Petapa
+zona_mas_frecuente_Villa Nueva
+zona_mas_frecuente_Zona 1
+zona_mas_frecuente_Zona 10
+zona_mas_frecuente_Zona 11
+zona_mas_frecuente_Zona 12
+zona_mas_frecuente_Zona 13
+zona_mas_frecuente_Zona 17
+zona_mas_frecuente_Zona 18
+zona_mas_frecuente_Zona 4
+zona_mas_frecuente_Zona 6
+zona_mas_frecuente_Zona 7
+zona_mas_frecuente_Zona 8
+zona_mas_frecuente_Zona 9
